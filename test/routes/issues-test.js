@@ -54,6 +54,27 @@ describe('Issues', function () {
             done();
         });
     })
+    describe('GET /issues', () => {
+        it('should return all the issues in an array', function (done) {
+            chai.request(server)
+                .get('/issues')
+                .end(function (err, res) {
+                    expect(res).to.have.status(200);
+                    expect(res.body).to.be.a('array');
+                    expect(res.body.length).to.equal(3);
+                    let result = _.map(res.body, (issue) => {
+                        return {
+                            id: issue._id,
+                            category: issue.category
+                        }
+                    });
+                    expect(result).to.include({id: "5bcf4dbd1e8bb84d200597fc", category: 'Art'});
+                    expect(result).to.include({id: "5bcf4dbf1e8bb84d200597fd", category: 'Art'});
+                    expect(result).to.include({id: "5bcf4dc71e8bb84d200597fe", category: 'Business'});
+                    done();
+                });
+        });
+    });
 
 
 })
