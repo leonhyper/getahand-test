@@ -14,6 +14,46 @@ chai.use(require('chai-things'));
 let _ = require('lodash' );
 
 describe('Issues', function () {
+    before(function (done) {
+        issues.collection.drop();
+        done();
+    })
+    beforeEach(function (done) {
+        var issue1 = new issues({
+            status: false,
+            solutions: [],
+            _id: "5bcf4dbd1e8bb84d200597fc",
+            category: "Art",
+        })
+        issue1.save(function(){
+            done();
+        });
+    })
+    beforeEach(function (done) {
+        var issue2 = new issues({
+            status: false,
+            solutions: [],
+            _id: "5bcf4dbf1e8bb84d200597fd",
+            category: "Art",
+        })
+        issue2.save(function(){
+            done();
+        });
+    })
+    beforeEach(function (done) {
+        var issue3 = new issues({
+            status: false,
+            solutions: [
+                "5bcf4def1e8bb84d20059800",
+                "5bcf4df21e8bb84d20059802"
+            ],
+            _id: "5bcf4dc71e8bb84d200597fe",
+            category: "Business",
+        })
+        issue3.save(function(){
+            done();
+        });
+    })
 
 
 })
