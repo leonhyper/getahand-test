@@ -76,5 +76,22 @@ describe('Issues', function () {
         });
     });
 
+    describe('GET /issues/:id', () => {
+
+        it('should return one issue with certain id', function (done) {
+            chai.request(server)
+                .get('/issues/5bcf4dbd1e8bb84d200597fc')
+                .end(function (err, res) {
+                    expect(res).to.have.status(200);
+                    let result = _.map(res.body, (issue) => {
+                        return {_id: issue._id}
+                    });
+                    expect(result).to.include({_id: "5bcf4dbd1e8bb84d200597fc"});
+                    done();
+                })
+        })
+       
+    })
+
 
 })
