@@ -102,5 +102,27 @@ describe('Issues', function () {
 
     })
 
+    describe('GET/issues/category/:category', () => {
+        it('should return all issues in certain category in array', function (done) {
+            chai.request(server)
+                .get('/issues/category/AR')
+                .end(function (err, res) {
+                    expect(res).to.have.status(200);
+                    expect(res.body).to.be.a('array');
+                    expect(res.body.length).to.equal(2);
+                    let result = _.map(res.body, (issue) => {
+                        return {
+                            id: issue._id,
+                            category: issue.category
+                        }
+                    });
+                    expect(result).to.include({id: "5bcf4dbd1e8bb84d200597fc", category: 'Art'});
+                    expect(result).to.include({id: "5bcf4dbf1e8bb84d200597fd", category: 'Art'});
+                    done();
+                })
+        })
+        
+    })
+
 
 })
