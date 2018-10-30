@@ -162,5 +162,25 @@ describe('Issues', function () {
         })
     })
 
+    describe('PUT/issues/:id/:status',()=>{
+        it('should update the status and display the modified issue',function (done) {
+            chai.request(server)
+                .put('/issues/5bcf4dbd1e8bb84d200597fc/1')
+                .end(function (err,res) {
+                    expect(res.body).to.have.property('message', 'Issue Successfully Set Solved!');
+                    expect(res.body.data).to.have.property('status',true);
+                    done();
+                })
+        })
+        after(function (done) {
+            chai.request(server)
+                .put('/issues/5bcf4dbd1e8bb84d200597fc/0')
+                .end(function (err) {
+                    done();
+                })
+        })
+        
+    })
+
 
 })
