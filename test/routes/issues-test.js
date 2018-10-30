@@ -179,7 +179,22 @@ describe('Issues', function () {
                     done();
                 })
         })
-        
+        it('should return an error message when id is invalid',function (done) {
+            chai.request(server)
+                .put('/issues/100000000/1')
+                .end(function (err,res) {
+                    expect(res.body).to.have.property('message', 'Donation NOT Found!');
+                    done();
+                })
+        })
+        it('should return an error message when status is illegal',function (done) {
+            chai.request(server)
+                .put('/issues/5bcf4dbd1e8bb84d200597fc/2')
+                .end(function (err,res) {
+                    expect(res.body).to.have.property('message', 'Issue NOT Updated to Solved!');
+                    done();
+                })
+        })
     })
 
 
