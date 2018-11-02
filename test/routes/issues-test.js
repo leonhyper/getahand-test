@@ -211,7 +211,27 @@ describe('Issues', function () {
                     done();
                 })
         })
-        
+        it('should return a message when a issue is deleted',function (done) {
+            chai.request(server)
+                .delete('/issues/5bcf4dbd1e8bb84d200597fc')
+                .end(function (err,res) {
+                    expect(res).to.have.status(200);
+                    expect(res.body).to.have.property('message', 'Issue Successfully Deleted!');
+                    done();
+                })
+        })
+        after(function (done) {
+            chai.request(server)
+                .get('/issues')
+                .end(function (err,res) {
+                    expect(res.body.length).to.equal(2);
+                    let result = _.map(res.body, (issue) => {
+                        return {_id: issue._id}
+                    });
+                    expect(result).to.not.include({id: "5bcf4dbd1e8bb84d200597fc"});
+                    done();
+                })
+        })
     })
 
 
