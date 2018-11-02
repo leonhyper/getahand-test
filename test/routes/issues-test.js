@@ -197,5 +197,22 @@ describe('Issues', function () {
         })
     })
 
+    describe('DELETE/issues/:id',()=>{
+        before(function (done) {
+            issues.collection.drop();
+            done();
+        })
+        it('should return an error message when id is invalid',function (done) {
+            chai.request(server)
+                .delete('/issues/10000000')
+                .end(function (err,res) {
+                    expect(res).to.have.status(404);
+                    expect(res.body).to.have.property('message', 'Issue NOT DELETED!');
+                    done();
+                })
+        })
+        
+    })
+
 
 })
