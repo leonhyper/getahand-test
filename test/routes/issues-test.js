@@ -234,5 +234,33 @@ describe('Issues', function () {
         })
     })
 
+    describe('POST/issues',()=>{
+        it('should return a message when an issue is successfully added',function (done) {
+            let issue = {
+                _id: "5bd1ef71a7acc445686cc0e1",
+                category: 'Academy' ,
+                status: 0,
+                solutions: []
+            };
+            chai.request(server)
+                .post('/issues')
+                .send(issue)
+                .end(function (err,res) {
+                    expect(res).to.have.status(200);
+                    expect(res.body).to.have.property('message', 'Issue Successfully Added!');
+                    done();
+                })
+            after(function (done) {
+                chai.request(server)
+                    .get('/issues')
+                    .end(function (err,res) {
+                        expect(res.body.length).to.equal(4);
+                        done();
+                    })
+            })
+        })
+    })
+
+
 
 })
