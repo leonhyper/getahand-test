@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0df6d507-988a-451f-85df-1085c69fd93b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-24T091544.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-10-24T091625.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/issues.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/issues.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/issues.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/issues.js" afterDir="false" />
-    </list>
+    <list default="true" id="0df6d507-988a-451f-85df-1085c69fd93b" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -1705,12 +1694,12 @@
       <workItem from="1541437884104" duration="15000" />
       <workItem from="1541686041074" duration="2084000" />
       <workItem from="1542016092662" duration="39000" />
-      <workItem from="1544281474194" duration="481000" />
+      <workItem from="1544281474194" duration="1081000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194106000" />
+    <option name="totallyTimeSpent" value="194706000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

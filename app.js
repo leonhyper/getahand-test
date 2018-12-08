@@ -20,6 +20,18 @@ if (process.env.NODE_ENV |= 'test') {
     // console.log(process.env.NODE_ENV);
 }
 
+var allowCrossDomain = function(req, res, next) {
+    res.header('Access-Control-Allow-Origin', 'http://localhost:8080');
+    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+    res.header('Access-Control-Allow-Credentials','true');
+    if (req.method === "OPTIONS")
+        res.send(200);
+    else
+        next();
+};
+
+app.use(allowCrossDomain);
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
