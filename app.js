@@ -9,6 +9,7 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 const issues = require("./routes/issues");
+const user = require("./routes/user");
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -26,6 +27,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+
+app.post('/user/validate/:name/:pass', user.validate);
+app.post('/user/register', user.register);
+app.post('/user/validateName/:name', user.validateName);
 
 
 app.get('/issues', issues.findAllIssues);
