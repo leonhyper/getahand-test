@@ -335,5 +335,14 @@ describe('Users', function () {
                     done();
                 })
         })
+        it('should return null if name dose not exist',function(done) {
+            chai.request(server)
+                .post('/user/validate/Daniel')
+                .end(function (err, res) {
+                    expect(res.body).to.not.have.property('name');
+                    expect(res.body).to.not.have.property('pass');
+                    done();
+                })
+        })
     })
 })
