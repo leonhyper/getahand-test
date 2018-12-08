@@ -294,4 +294,16 @@ describe('Users', function () {
                 })
         })
     })
+    describe('POST/user/validate/:name/:pass', ()=> {
+        it('should return the found user when name and pass are valid',function(done) {
+            chai.request(server)
+                .post('/user/validate/leon/1013702057')
+                .end(function (err, res) {
+                    expect(res).to.have.status(200);
+                    expect(res.body).to.have.property('name');
+                    expect(res.body).to.have.property('pass');
+                    done();
+                })
+        })
+    })
 })
