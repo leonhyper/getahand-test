@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0df6d507-988a-451f-85df-1085c69fd93b" name="Default Changelist" comment="" />
+    <list default="true" id="0df6d507-988a-451f-85df-1085c69fd93b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test/routes/users-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/routes/issues-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/routes/issues-test.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -122,24 +127,24 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="config" value="3" />
-          <entry key="js" value="2" />
+          <entry key="js" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JavaScript" value="2" />
+          <entry key="JavaScript" value="4" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="config" value="78" />
-          <entry key="js" value="24" />
+          <entry key="js" value="225" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="24" />
+          <entry key="JavaScript" value="225" />
           <entry key="PLAIN_TEXT" value="78" />
         </counts>
       </usages-collector>
@@ -149,11 +154,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="37" column="57" lean-forward="true" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
+            <state relative-caret-position="247">
+              <caret line="43" column="24" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -161,8 +166,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/issues.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+            <state relative-caret-position="513">
+              <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -170,8 +175,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
-              <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+            <state relative-caret-position="304">
+              <caret line="37" column="54" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -186,19 +191,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/routes/issues-test.js">
+        <entry file="file://$PROJECT_DIR$/test/routes/users-test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="236" column="32" selection-start-line="236" selection-start-column="32" selection-end-line="236" selection-end-column="32" />
+            <state relative-caret-position="596">
+              <caret line="52" column="1" lean-forward="true" selection-start-line="15" selection-end-line="52" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/user.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/routes/issues-test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="501">
+              <caret line="301" column="6" lean-forward="true" selection-start-line="301" selection-start-column="6" selection-end-line="301" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -246,15 +251,16 @@
         <option value="$PROJECT_DIR$/bin/www" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/_config.js" />
-        <option value="$PROJECT_DIR$/test/routes/issues-test.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/../lab/lab9/bundlelab/.git/config" />
         <option value="$PROJECT_DIR$/models/users.js" />
         <option value="$PROJECT_DIR$/models/user.js" />
         <option value="$PROJECT_DIR$/models/issues.js" />
         <option value="$PROJECT_DIR$/routes/issues.js" />
-        <option value="$PROJECT_DIR$/routes/user.js" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/routes/user.js" />
+        <option value="$PROJECT_DIR$/test/routes/users-test.js" />
+        <option value="$PROJECT_DIR$/test/routes/issues-test.js" />
       </list>
     </option>
   </component>
@@ -1694,12 +1700,12 @@
       <workItem from="1541437884104" duration="15000" />
       <workItem from="1541686041074" duration="2084000" />
       <workItem from="1542016092662" duration="39000" />
-      <workItem from="1544281474194" duration="1081000" />
+      <workItem from="1544281474194" duration="3368000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194706000" />
+    <option name="totallyTimeSpent" value="196993000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1875,6 +1881,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/routes/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="37" column="54" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/issues.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="43" column="24" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/models/issues.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1882,31 +1909,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/routes/users-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="596">
+          <caret line="52" column="1" lean-forward="true" selection-start-line="15" selection-end-line="52" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/routes/issues-test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="236" column="32" selection-start-line="236" selection-start-column="32" selection-end-line="236" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/issues.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="37" column="57" lean-forward="true" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
+        <state relative-caret-position="501">
+          <caret line="301" column="6" lean-forward="true" selection-start-line="301" selection-start-column="6" selection-end-line="301" selection-end-column="6" />
         </state>
       </provider>
     </entry>

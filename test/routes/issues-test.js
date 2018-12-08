@@ -1,6 +1,7 @@
 process.env.NODE_ENV = 'test';
 
 let issues = require('../../models/issues');
+let users = require('../../models/user');
 let chai = require('chai');
 let chaiHttp = require('chai-http');
 let server = require('../../bin/www');
@@ -260,7 +261,37 @@ describe('Issues', function () {
             })
         })
     })
+})
 
+describe('Users', function () {
+    before(function (done) {
+        users.collection.drop();
+        done();
+    })
+    beforeEach(function (done) {
+        var user1 = new users({
+            name: "leon",
+            pass: "1013702057",
+        })
+        user1.save(function(){
+            done();
+        });
+    })
 
-
+    describe('POST/user/register', ()=> {
+        it('should return a message when an user is successfully added', function(done) {
+            let user = {
+                name: "Han",
+                pass: "111111",
+            };
+            chai.request(server)
+                .post('/user/register')
+                .send(user)
+                .end(function (err,res) {
+                    expect(res).to.have.status(200);
+                    expect(res.body).to.have.property('message', 'Registration succeed!');
+                    done();
+                })
+        })
+    })
 })

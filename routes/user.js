@@ -5,7 +5,15 @@ let router = express.Router();
 let mongoose = require('mongoose');
 let db = mongoose.connection;
 
-mongoose.connect('mongodb://localhost:27017/issuesdb');
+if (process.env.NODE_ENV == 'test') {
+    var mongodbUri ='mongodb://issuesdb:1013702057zs@ds139883.mlab.com:39883/issues-test';
+}
+else{
+    // var mongodbUri ='mongodb://issuesdb:1013702057zs@ds139193.mlab.com:39193/issuesdb';
+    var mongodbUri ='mongodb://localhost:27017/issuesdb';
+}
+
+mongoose.connect(mongodbUri);
 
 db.on('error', function (err) {
     console.log('Unable to Connect to [ ' + db.name + ' ]', err);
