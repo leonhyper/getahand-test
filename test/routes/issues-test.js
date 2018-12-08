@@ -305,5 +305,23 @@ describe('Users', function () {
                     done();
                 })
         })
+        it('should return null if name is invalid',function(done) {
+            chai.request(server)
+                .post('/user/validate/o/1013702057')
+                .end(function (err, res) {
+                    expect(res.body).to.not.have.property('name');
+                    expect(res.body).to.not.have.property('pass');
+                    done();
+                })
+        })
+        it('should return null if pass is invalid',function(done) {
+            chai.request(server)
+                .post('/user/validate/leon/101')
+                .end(function (err, res) {
+                    expect(res.body).to.not.have.property('name');
+                    expect(res.body).to.not.have.property('pass');
+                    done();
+                })
+        })
     })
 })
