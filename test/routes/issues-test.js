@@ -324,4 +324,16 @@ describe('Users', function () {
                 })
         })
     })
+    describe('POST/user/validateName/:name',()=> {
+        it('should return the found user if the name exists',function(done) {
+            chai.request(server)
+                .post('/user/validateName/leon')
+                .end(function (err, res) {
+                    expect(res).to.have.status(200);
+                    expect(res.body).to.have.property('name');
+                    expect(res.body).to.have.property('pass');
+                    done();
+                })
+        })
+    })
 })
