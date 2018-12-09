@@ -105,6 +105,10 @@ In Api, fuzzy search applied, user authenticating implemented.
 
 In test I used test isolation and before(),beforeEach() and after() hook.
 
-Eslint applied, npm script including linting, watching, multiple scripts, Pre and Post hooks applied.
+Eslint applied, npm script including linting, watching, multiple scripts, Pre and Post hooks, istanbul cover applied.
+
+Test results and coverage data are published on COVERALLS.
 
 github link : https://github.com/leonhyper/getahand-test
+
+coveralls link : https://coveralls.io/github/leonhyper/getahand-test
