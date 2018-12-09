@@ -1,6 +1,6 @@
 let mongoose = require('mongoose');
 
-Schema = mongoose.Schema;
+// Schema = mongoose.Schema;
 
 let UserSchema = new mongoose.Schema({
         name: {type:String,unique:true},

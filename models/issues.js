@@ -1,6 +1,6 @@
 let mongoose = require('mongoose');
 
-Schema = mongoose.Schema;
+// Schema = mongoose.Schema;
 
 let IssueSchema = new mongoose.Schema({
         // issuesId: Schema.Types.ObjectId,

@@ -1,0 +1,155 @@
+[33mcommit f46682999f05eb3d0cfa9647273ff466d70b73b4[m[33m ([m[1;36mHEAD -> [m[1;32mdevelopment[m[33m)[m
+Author: zhusheng <1013702057@qq.com>
+Date:   Sun Dec 9 23:46:09 2018 +0800
+
+    ES6
+
+[33mcommit 8246bec55a49fc780ddbfec369d61d3066183c4d[m
+Author: zhusheng <1013702057@qq.com>
+Date:   Sun Dec 9 23:23:55 2018 +0800
+
+    Platform-independence.
+
+[33mcommit abe9b9040d1a204453ebcf9407486fcc21434d87[m[33m ([m[1;32mvalidateName-test[m[33m)[m
+Author: zhusheng <1013702057@qq.com>
+Date:   Sun Dec 9 00:36:46 2018 +0800
+
+    ValidateName endpoint tested--error case
+
+[33mcommit 8299a0187a8f33690a2aee3002c8a1a6d4115ecf[m
+Author: zhusheng <1013702057@qq.com>
+Date:   Sun Dec 9 00:31:49 2018 +0800
+
+    ValidateName endpoint tested--normal case
+
+[33mcommit 62bbae63bbb81bfdf996c272b684a7187a76b560[m[33m ([m[1;32mvalidate-test[m[33m)[m
+Author: zhusheng <1013702057@qq.com>
+Date:   Sun Dec 9 00:27:15 2018 +0800
+
+    Validate endpoint tested--error case
+
+[33mcommit 28af0d25444a2cfd7cd9abf1a49df09e7ab476ac[m
+Author: zhusheng <1013702057@qq.com>
+Date:   Sun Dec 9 00:16:50 2018 +0800
+
+    Validate endpoint tested--normal case
+
+[33mcommit 269acf5f9a68ac7646c986e091b37812919574d5[m[33m ([m[1;32mUser-register-test[m[33m)[m
+Author: zhusheng <1013702057@qq.com>
+Date:   Sun Dec 9 00:04:07 2018 +0800
+
+    Register function endpoint tested
+
+[33mcommit 7914364d060b1301bf05440d4314c8350b9130da[m
+Author: zhusheng <1013702057@qq.com>
+Date:   Sat Dec 8 23:27:15 2018 +0800
+
+    Configurate Cross-origin resource sharing
+
+[33mcommit dfffeffab6ca66632e5c65b3e1210a2ab753e292[m
+Author: zhusheng <1013702057@qq.com>
+Date:   Sat Dec 8 23:15:15 2018 +0800
+
+    Add new model user
+
+[33mcommit b4563021e88d6ac17fa1a027cc85517f71d31736[m[33m ([m[1;31mgetahand-test/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: zhusheng <1013702057@qq.com>
+Date:   Mon Nov 5 01:27:56 2018 +0800
+
+    readme added
+
+[33mcommit 59701a5c9a1b012b26ba2cab72ba6b33534be69d[m[33m ([m[1;32madd-issue-test[m[33m)[m
+Author: zhusheng <1013702057@qq.com>
+Date:   Sat Nov 3 21:28:11 2018 +0800
+
+    addIssue endpoint tested
+
+[33mcommit fffe82e7c368ce02afb92012f746acb9f7536e2a[m[33m ([m[1;32mdelete-issue-test[m[33m)[m
+Author: zhusheng <1013702057@qq.com>
+Date:   Sat Nov 3 01:52:52 2018 +0800
+
+    deleteIssue endpoint tested--normal case
+
+[33mcommit 0dfac173cda256d7f6c1b00dc6ce141c3a3691e0[m
+Author: zhusheng <1013702057@qq.com>
+Date:   Sat Nov 3 01:52:01 2018 +0800
+
+    deleteIssue endpoint tested--error case
+
+[33mcommit b2cc773d0f12d01e4746f3e1e192e781cffcdef9[m[33m ([m[1;32mupdate-status-test[m[33m)[m
+Author: zhusheng <1013702057@qq.com>
+Date:   Wed Oct 31 00:28:42 2018 +0800
+
+    updateStatus endpoint tested--error case
+
+[33mcommit 332754ee988337076e76b528111ce6d8ad56e483[m
+Author: zhusheng <1013702057@qq.com>
+Date:   Wed Oct 31 00:28:14 2018 +0800
+
+    updateStatus endpoint tested--normal case
+
+[33mcommit d3dad8bbf4420fd399226d4b325df094093704cb[m[33m ([m[1;32mfind-byStatus-test[m[33m)[m
+Author: zhusheng <1013702057@qq.com>
+Date:   Mon Oct 29 22:15:44 2018 +0800
+
+    findByStatus endpoint tested--error case
+
+[33mcommit e5060dd8beacfa06317aad8a802d7ba620c2cbee[m
+Author: zhusheng <1013702057@qq.com>
+Date:   Mon Oct 29 22:15:11 2018 +0800
+
+    findByStatus endpoint tested--normal case
+
+[33mcommit 99d553364015e757434004f6457e650a6346c7ea[m[33m ([m[1;32mfind-byCategory-test[m[33m)[m
+Author: zhusheng <1013702057@qq.com>
+Date:   Sun Oct 28 21:38:37 2018 +0800
+
+    findByCate endpoint tested--error case
+
+[33mcommit ac144e66c42a5ccedb48d73c029fad7af5078fd9[m
+Author: zhusheng <1013702057@qq.com>
+Date:   Sun Oct 28 21:38:01 2018 +0800
+
+    findByCate endpoint tested--normal case
+
+[33mcommit b057aa099f7cf2711e1b4acfbe0050817d1257a1[m
+Author: zhusheng <1013702057@qq.com>
+Date:   Sun Oct 28 21:27:09 2018 +0800
+
+    findByCate endpoint tested--error case
+
+[33mcommit 0e8b3e460695044c755dfd567652ea8fc4d61659[m
+Author: zhusheng <1013702057@qq.com>
+Date:   Sun Oct 28 21:26:38 2018 +0800
+
+    findByCate endpoint tested--normal case
+
+[33mcommit 89fcfb5c31d24ca3931d75ee541f94ce1aaf38c8[m[33m ([m[1;32mfind-byId-test[m[33m)[m
+Author: zhusheng <1013702057@qq.com>
+Date:   Sat Oct 27 22:13:42 2018 +0800
+
+    findById endpoint tedted--error case
+
+[33mcommit 4ad489d4a0fe18b318a954dad8ce7ccb11423183[m
+Author: zhusheng <1013702057@qq.com>
+Date:   Sat Oct 27 22:10:29 2018 +0800
+
+    findById endpoint tedted--normal case
+
+[33mcommit 04fd3f7fb92e42528bc4715938c94a6b0e9a1ca2[m[33m ([m[1;32mfind-all-issues-test[m[33m)[m
+Author: zhusheng <1013702057@qq.com>
+Date:   Fri Oct 26 21:03:30 2018 +0800
+
+    findAllIssues endpoint tested
+
+[33mcommit 6833f8601232597ec641bc80f1dc0c5d50817b4e[m[33m ([m[1;32mtest-isolation[m[33m)[m
+Author: zhusheng <1013702057@qq.com>
+Date:   Fri Oct 26 21:01:24 2018 +0800
+
+    set test isolaiotn
+
+[33mcommit 487a28c54556b138e95498da9fd1eb347eea672c[m
+Author: zhusheng <1013702057@qq.com>
+Date:   Fri Oct 26 20:56:36 2018 +0800
+
+    original

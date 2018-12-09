@@ -15,6 +15,9 @@ chai.use(require('chai-things'));
 let _ = require('lodash' );
 
 describe('Issues', function () {
+    after(function (done) {
+        server.close(done);
+    });
     before(function (done) {
         issues.collection.drop();
         done();
@@ -264,7 +267,11 @@ describe('Issues', function () {
 })
 
 describe('Users', function () {
+    after(function (done) {
+        server.close(done);
+    });
     before(function (done) {
+
         users.collection.drop();
         done();
     })
