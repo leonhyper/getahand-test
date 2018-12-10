@@ -9,8 +9,8 @@ if (process.env.NODE_ENV == 'test') {
     var mongodbUri ='mongodb://issuesdb:1013702057zs@ds139883.mlab.com:39883/issues-test';
 }
 else{
-    // var mongodbUri ='mongodb://issuesdb:1013702057zs@ds139193.mlab.com:39193/issuesdb';
-    var mongodbUri ='mongodb://localhost:27017/issuesdb';
+    var mongodbUri ='mongodb://issuesdb:1013702057zs@ds139193.mlab.com:39193/issuesdb';
+    // var mongodbUri ='mongodb://localhost:27017/issuesdb';
 }
 
 mongoose.connect(mongodbUri);
